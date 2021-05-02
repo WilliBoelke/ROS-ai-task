@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/williboelke/Schreibtisch/ROS_Schein/build'
+export PWD='/home/williboelke/Schreibtisch/ROS-Schein/build'

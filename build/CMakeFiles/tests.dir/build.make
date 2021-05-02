@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/williboelke/Schreibtisch/ROS_Schein/src
+CMAKE_SOURCE_DIR = /home/williboelke/Schreibtisch/ROS-Schein/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/williboelke/Schreibtisch/ROS_Schein/build
+CMAKE_BINARY_DIR = /home/williboelke/Schreibtisch/ROS-Schein/build
 
 # Utility rule file for tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/williboelke/Schreibtisch/ROS_Schein/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/williboelke/Schreibtisch/ROS_Schein/src /home/williboelke/Schreibtisch/ROS_Schein/src /home/williboelke/Schreibtisch/ROS_Schein/build /home/williboelke/Schreibtisch/ROS_Schein/build /home/williboelke/Schreibtisch/ROS_Schein/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/williboelke/Schreibtisch/ROS-Schein/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/williboelke/Schreibtisch/ROS-Schein/src /home/williboelke/Schreibtisch/ROS-Schein/src /home/williboelke/Schreibtisch/ROS-Schein/build /home/williboelke/Schreibtisch/ROS-Schein/build /home/williboelke/Schreibtisch/ROS-Schein/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 

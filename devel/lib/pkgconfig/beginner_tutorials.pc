@@ -1,8 +1,8 @@
-prefix=/home/williboelke/Schreibtisch/ROS_Schein/devel
+prefix=/home/williboelke/Schreibtisch/ROS-Schein/devel
 
 Name: beginner_tutorials
 Description: Description of beginner_tutorials
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/williboelke/Schreibtisch/ROS-Schein/devel/include
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: message_runtime
