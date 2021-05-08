@@ -2,7 +2,7 @@
 
 message(STATUS "beginner_tutorials: 1 messages, 0 services")
 
-set(MSG_I_FLAGS "-Ibeginner_tutorials:/home/williboelke/Schreibtisch/ROS-Schein/src/beginner_tutorials/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Ibeginner_tutorials:/home/williboelke/Schreibtisch/ROS-Schein/src/beginner_tutorials/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -203,6 +203,9 @@ endif()
 if(TARGET std_msgs_generate_messages_cpp)
   add_dependencies(beginner_tutorials_generate_messages_cpp std_msgs_generate_messages_cpp)
 endif()
+if(TARGET sensor_msgs_generate_messages_cpp)
+  add_dependencies(beginner_tutorials_generate_messages_cpp sensor_msgs_generate_messages_cpp)
+endif()
 
 if(geneus_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/beginner_tutorials)
   # install generated code
@@ -213,6 +216,9 @@ if(geneus_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/be
 endif()
 if(TARGET std_msgs_generate_messages_eus)
   add_dependencies(beginner_tutorials_generate_messages_eus std_msgs_generate_messages_eus)
+endif()
+if(TARGET sensor_msgs_generate_messages_eus)
+  add_dependencies(beginner_tutorials_generate_messages_eus sensor_msgs_generate_messages_eus)
 endif()
 
 if(genlisp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/beginner_tutorials)
@@ -225,6 +231,9 @@ endif()
 if(TARGET std_msgs_generate_messages_lisp)
   add_dependencies(beginner_tutorials_generate_messages_lisp std_msgs_generate_messages_lisp)
 endif()
+if(TARGET sensor_msgs_generate_messages_lisp)
+  add_dependencies(beginner_tutorials_generate_messages_lisp sensor_msgs_generate_messages_lisp)
+endif()
 
 if(gennodejs_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/beginner_tutorials)
   # install generated code
@@ -235,6 +244,9 @@ if(gennodejs_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_D
 endif()
 if(TARGET std_msgs_generate_messages_nodejs)
   add_dependencies(beginner_tutorials_generate_messages_nodejs std_msgs_generate_messages_nodejs)
+endif()
+if(TARGET sensor_msgs_generate_messages_nodejs)
+  add_dependencies(beginner_tutorials_generate_messages_nodejs sensor_msgs_generate_messages_nodejs)
 endif()
 
 if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/beginner_tutorials)
@@ -247,4 +259,7 @@ if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/begi
 endif()
 if(TARGET std_msgs_generate_messages_py)
   add_dependencies(beginner_tutorials_generate_messages_py std_msgs_generate_messages_py)
+endif()
+if(TARGET sensor_msgs_generate_messages_py)
+  add_dependencies(beginner_tutorials_generate_messages_py sensor_msgs_generate_messages_py)
 endif()
