@@ -19,7 +19,7 @@ add_custom_target(beginner_tutorials_generate_messages ALL)
 
 get_filename_component(_filename "/home/williboelke/Schreibtisch/ROS-ai-task/src/beginner_tutorials/msg/Num.msg" NAME_WE)
 add_custom_target(_beginner_tutorials_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "beginner_tutorials" "/home/williboelke/Schreibtisch/ROS-ai-task/src/beginner_tutorials/msg/Num.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "beginner_tutorials" "/home/williboelke/Schreibtisch/ROS-ai-task/src/beginner_tutorials/msg/Num.msg" "std_msgs/Header"
 )
 
 #
@@ -31,7 +31,7 @@ add_custom_target(_beginner_tutorials_generate_messages_check_deps_${_filename}
 _generate_msg_cpp(beginner_tutorials
   "/home/williboelke/Schreibtisch/ROS-ai-task/src/beginner_tutorials/msg/Num.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/beginner_tutorials
 )
 
@@ -64,7 +64,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS beginner_tutorials_generate_message
 _generate_msg_eus(beginner_tutorials
   "/home/williboelke/Schreibtisch/ROS-ai-task/src/beginner_tutorials/msg/Num.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/beginner_tutorials
 )
 
@@ -97,7 +97,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS beginner_tutorials_generate_message
 _generate_msg_lisp(beginner_tutorials
   "/home/williboelke/Schreibtisch/ROS-ai-task/src/beginner_tutorials/msg/Num.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/beginner_tutorials
 )
 
@@ -130,7 +130,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS beginner_tutorials_generate_message
 _generate_msg_nodejs(beginner_tutorials
   "/home/williboelke/Schreibtisch/ROS-ai-task/src/beginner_tutorials/msg/Num.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/beginner_tutorials
 )
 
@@ -163,7 +163,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS beginner_tutorials_generate_message
 _generate_msg_py(beginner_tutorials
   "/home/williboelke/Schreibtisch/ROS-ai-task/src/beginner_tutorials/msg/Num.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/beginner_tutorials
 )
 

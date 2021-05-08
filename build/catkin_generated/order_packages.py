@@ -2,4 +2,4 @@
 source_root_dir = '/home/williboelke/Schreibtisch/ROS-ai-task/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/opt/ros/noetic'.split(';') if '/opt/ros/noetic' != '' else []
+underlay_workspaces = '/home/williboelke/Schreibtisch/ROS-ai-task/devel;/opt/ros/noetic'.split(';') if '/home/williboelke/Schreibtisch/ROS-ai-task/devel;/opt/ros/noetic' != '' else []

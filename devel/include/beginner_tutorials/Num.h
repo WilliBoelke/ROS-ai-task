@@ -15,6 +15,7 @@
 #include <ros/builtin_message_traits.h>
 #include <ros/message_operations.h>
 
+#include <std_msgs/Header.h>
 
 namespace beginner_tutorials
 {
@@ -24,16 +25,21 @@ struct Num_
   typedef Num_<ContainerAllocator> Type;
 
   Num_()
-    : num(0)  {
+    : header()
+    , num(0)  {
     }
   Num_(const ContainerAllocator& _alloc)
-    : num(0)  {
+    : header(_alloc)
+    , num(0)  {
   (void)_alloc;
     }
 
 
 
-   typedef int64_t _num_type;
+   typedef  ::std_msgs::Header_<ContainerAllocator>  _header_type;
+  _header_type header;
+
+   typedef int32_t _num_type;
   _num_type num;
 
 
@@ -65,7 +71,8 @@ return s;
 template<typename ContainerAllocator1, typename ContainerAllocator2>
 bool operator==(const ::beginner_tutorials::Num_<ContainerAllocator1> & lhs, const ::beginner_tutorials::Num_<ContainerAllocator2> & rhs)
 {
-  return lhs.num == rhs.num;
+  return lhs.header == rhs.header &&
+    lhs.num == rhs.num;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -98,22 +105,22 @@ struct IsMessage< ::beginner_tutorials::Num_<ContainerAllocator> const>
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::beginner_tutorials::Num_<ContainerAllocator> >
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::beginner_tutorials::Num_<ContainerAllocator> const>
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
 struct HasHeader< ::beginner_tutorials::Num_<ContainerAllocator> >
-  : FalseType
+  : TrueType
   { };
 
 template <class ContainerAllocator>
 struct HasHeader< ::beginner_tutorials::Num_<ContainerAllocator> const>
-  : FalseType
+  : TrueType
   { };
 
 
@@ -122,12 +129,12 @@ struct MD5Sum< ::beginner_tutorials::Num_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "57d3c40ec3ac3754af76a83e6e73127a";
+    return "aeeda2956bdcc9d4f37a4aa337a4c7c0";
   }
 
   static const char* value(const ::beginner_tutorials::Num_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x57d3c40ec3ac3754ULL;
-  static const uint64_t static_value2 = 0xaf76a83e6e73127aULL;
+  static const uint64_t static_value1 = 0xaeeda2956bdcc9d4ULL;
+  static const uint64_t static_value2 = 0xf37a4aa337a4c7c0ULL;
 };
 
 template<class ContainerAllocator>
@@ -146,7 +153,23 @@ struct Definition< ::beginner_tutorials::Num_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "int64 num\n"
+    return "Header header\n"
+"int32 num\n"
+"================================================================================\n"
+"MSG: std_msgs/Header\n"
+"# Standard metadata for higher-level stamped data types.\n"
+"# This is generally used to communicate timestamped data \n"
+"# in a particular coordinate frame.\n"
+"# \n"
+"# sequence ID: consecutively increasing ID \n"
+"uint32 seq\n"
+"#Two-integer timestamp that is expressed as:\n"
+"# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n"
+"# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n"
+"# time-handling sugar is provided by the client library\n"
+"time stamp\n"
+"#Frame this data is associated with\n"
+"string frame_id\n"
 ;
   }
 
@@ -165,6 +188,7 @@ namespace serialization
   {
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
+      stream.next(m.header);
       stream.next(m.num);
     }
 
@@ -184,8 +208,11 @@ struct Printer< ::beginner_tutorials::Num_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::beginner_tutorials::Num_<ContainerAllocator>& v)
   {
+    s << indent << "header: ";
+    s << std::endl;
+    Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
     s << indent << "num: ";
-    Printer<int64_t>::stream(s, indent + "  ", v.num);
+    Printer<int32_t>::stream(s, indent + "  ", v.num);
   }
 };
 
