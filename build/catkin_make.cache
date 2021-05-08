@@ -1,2 +1,2 @@
 beginner_tutorials
--DCATKIN_DEVEL_PREFIX=/home/williboelke/Schreibtisch/ROS-Schein/devel -DCMAKE_INSTALL_PREFIX=/home/williboelke/Schreibtisch/ROS-Schein/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/williboelke/Schreibtisch/ROS-ai-task/devel -DCMAKE_INSTALL_PREFIX=/home/williboelke/Schreibtisch/ROS-ai-task/install -G Unix Makefiles

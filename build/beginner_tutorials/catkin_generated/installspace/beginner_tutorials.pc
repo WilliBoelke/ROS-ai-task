@@ -1,4 +1,4 @@
-prefix=/home/williboelke/Schreibtisch/ROS-Schein/install
+prefix=/home/williboelke/Schreibtisch/ROS-ai-task/install
 
 Name: beginner_tutorials
 Description: Description of beginner_tutorials

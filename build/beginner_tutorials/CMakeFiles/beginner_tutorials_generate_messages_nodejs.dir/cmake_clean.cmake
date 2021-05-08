@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/williboelke/Schreibtisch/ROS-Schein/devel/share/gennodejs/ros/beginner_tutorials/msg/Num.js"
+  "/home/williboelke/Schreibtisch/ROS-ai-task/devel/share/gennodejs/ros/beginner_tutorials/msg/Num.js"
   "CMakeFiles/beginner_tutorials_generate_messages_nodejs"
 )
 

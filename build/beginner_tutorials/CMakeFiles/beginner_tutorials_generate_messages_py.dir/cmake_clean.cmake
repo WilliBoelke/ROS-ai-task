@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/williboelke/Schreibtisch/ROS-Schein/devel/lib/python3/dist-packages/beginner_tutorials/msg/_Num.py"
-  "/home/williboelke/Schreibtisch/ROS-Schein/devel/lib/python3/dist-packages/beginner_tutorials/msg/__init__.py"
+  "/home/williboelke/Schreibtisch/ROS-ai-task/devel/lib/python3/dist-packages/beginner_tutorials/msg/_Num.py"
+  "/home/williboelke/Schreibtisch/ROS-ai-task/devel/lib/python3/dist-packages/beginner_tutorials/msg/__init__.py"
   "CMakeFiles/beginner_tutorials_generate_messages_py"
 )
 

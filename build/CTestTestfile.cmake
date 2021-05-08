@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/williboelke/Schreibtisch/ROS-Schein/src
-# Build directory: /home/williboelke/Schreibtisch/ROS-Schein/build
+# Source directory: /home/williboelke/Schreibtisch/ROS-ai-task/src
+# Build directory: /home/williboelke/Schreibtisch/ROS-ai-task/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
