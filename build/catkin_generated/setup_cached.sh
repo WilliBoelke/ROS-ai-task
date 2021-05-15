@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/williboelke/Schreibtisch/ROS-ai-task/build'
+export PWD='/home/williboelke/Schreibtisch/ros-ai-task/build'

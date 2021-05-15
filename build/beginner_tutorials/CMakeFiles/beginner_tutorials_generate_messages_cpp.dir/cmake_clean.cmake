@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/williboelke/Schreibtisch/ROS-ai-task/devel/include/beginner_tutorials/Num.h"
+  "/home/williboelke/Schreibtisch/ros-ai-task/devel/include/beginner_tutorials/Num.h"
   "CMakeFiles/beginner_tutorials_generate_messages_cpp"
 )
 

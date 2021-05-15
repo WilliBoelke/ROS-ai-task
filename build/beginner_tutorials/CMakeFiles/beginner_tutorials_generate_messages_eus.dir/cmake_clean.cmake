@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/williboelke/Schreibtisch/ROS-ai-task/devel/share/roseus/ros/beginner_tutorials/manifest.l"
-  "/home/williboelke/Schreibtisch/ROS-ai-task/devel/share/roseus/ros/beginner_tutorials/msg/Num.l"
+  "/home/williboelke/Schreibtisch/ros-ai-task/devel/share/roseus/ros/beginner_tutorials/manifest.l"
+  "/home/williboelke/Schreibtisch/ros-ai-task/devel/share/roseus/ros/beginner_tutorials/msg/Num.l"
   "CMakeFiles/beginner_tutorials_generate_messages_eus"
 )
 

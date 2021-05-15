@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/williboelke/Schreibtisch/ROS-ai-task/src
+CMAKE_SOURCE_DIR = /home/williboelke/Schreibtisch/ros-ai-task/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/williboelke/Schreibtisch/ROS-ai-task/build
+CMAKE_BINARY_DIR = /home/williboelke/Schreibtisch/ros-ai-task/build
 
 # Utility rule file for geometry_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ beginner_tutorials/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build: geo
 .PHONY : beginner_tutorials/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 
 beginner_tutorials/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
-	cd /home/williboelke/Schreibtisch/ROS-ai-task/build/beginner_tutorials && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/williboelke/Schreibtisch/ros-ai-task/build/beginner_tutorials && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : beginner_tutorials/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 
 beginner_tutorials/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend:
-	cd /home/williboelke/Schreibtisch/ROS-ai-task/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/williboelke/Schreibtisch/ROS-ai-task/src /home/williboelke/Schreibtisch/ROS-ai-task/src/beginner_tutorials /home/williboelke/Schreibtisch/ROS-ai-task/build /home/williboelke/Schreibtisch/ROS-ai-task/build/beginner_tutorials /home/williboelke/Schreibtisch/ROS-ai-task/build/beginner_tutorials/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/williboelke/Schreibtisch/ros-ai-task/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/williboelke/Schreibtisch/ros-ai-task/src /home/williboelke/Schreibtisch/ros-ai-task/src/beginner_tutorials /home/williboelke/Schreibtisch/ros-ai-task/build /home/williboelke/Schreibtisch/ros-ai-task/build/beginner_tutorials /home/williboelke/Schreibtisch/ros-ai-task/build/beginner_tutorials/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : beginner_tutorials/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
 

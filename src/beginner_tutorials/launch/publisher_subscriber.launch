@@ -1,4 +1,4 @@
 <launch>
- <node name="talker_node" pkg="beginner_tutorials" type="talker.py" />
- <node name="listener_node" pkg="beginner_tutorials" type="listener.py" />
+ <node name="camera_node" pkg="beginner_tutorials" type="camera.py" />
+ <node name="processor_node" pkg="beginner_tutorials" type="img_processor.py" />
 </launch>

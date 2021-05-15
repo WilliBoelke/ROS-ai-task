@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/williboelke/Schreibtisch/ROS-ai-task/devel/share/common-lisp/ros/beginner_tutorials/msg/Num.lisp"
+  "/home/williboelke/Schreibtisch/ros-ai-task/devel/share/common-lisp/ros/beginner_tutorials/msg/Num.lisp"
   "CMakeFiles/beginner_tutorials_generate_messages_lisp"
 )
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/williboelke/Schreibtisch/ROS-ai-task/src
+CMAKE_SOURCE_DIR = /home/williboelke/Schreibtisch/ros-ai-task/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/williboelke/Schreibtisch/ROS-ai-task/build
+CMAKE_BINARY_DIR = /home/williboelke/Schreibtisch/ros-ai-task/build
 
 # Utility rule file for run_tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/williboelke/Schreibtisch/ROS-ai-task/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/williboelke/Schreibtisch/ROS-ai-task/src /home/williboelke/Schreibtisch/ROS-ai-task/src /home/williboelke/Schreibtisch/ROS-ai-task/build /home/williboelke/Schreibtisch/ROS-ai-task/build /home/williboelke/Schreibtisch/ROS-ai-task/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/williboelke/Schreibtisch/ros-ai-task/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/williboelke/Schreibtisch/ros-ai-task/src /home/williboelke/Schreibtisch/ros-ai-task/src /home/williboelke/Schreibtisch/ros-ai-task/build /home/williboelke/Schreibtisch/ros-ai-task/build /home/williboelke/Schreibtisch/ros-ai-task/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 
