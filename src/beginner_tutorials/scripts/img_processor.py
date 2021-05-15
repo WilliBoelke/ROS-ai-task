@@ -50,5 +50,5 @@ def img_processor():
 
 if __name__ == '__main__':
      ##topic for the processed image 
-    image_topic = rospy.Publisher('processes_image',Image, queue_size= 3)
+    image_topic = rospy.Publisher('processed_image',Image, queue_size= 3)
     img_processor()

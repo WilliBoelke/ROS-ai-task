@@ -23,6 +23,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/williboelke/Schreibtisch/ros-ai-task/src/beginner_tutorials/CMakeLists.txt"
   "/home/williboelke/Schreibtisch/ros-ai-task/src/beginner_tutorials/package.xml"
   "/home/williboelke/Schreibtisch/ros-ai-task/src/beginner_tutorials/scripts/camera.py"
+  "/home/williboelke/Schreibtisch/ros-ai-task/src/beginner_tutorials/scripts/controller.py"
   "/home/williboelke/Schreibtisch/ros-ai-task/src/beginner_tutorials/scripts/img_processor.py"
   "/opt/ros/noetic/share/catkin/cmake/all.cmake"
   "/opt/ros/noetic/share/catkin/cmake/assert.cmake"
